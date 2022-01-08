@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+
+      header{
+        background-color: #5a71bb;
+        text-align: center;
+        color: white;
+        padding: 20px 0;
+
+      }
+
+      .lista-cadastro{
+        display: flex;
+        margin: 20px 0;
+        padding: 0 20px;
+      }
+
+      .lista-cadastro input[type=text]{
+        border-radius:20px;
+        border: 1px solid #5a71bb;
+        flex: 1;
+        height: 40px;
+        padding-left: 20px;
+      }
+
+
+      .lista-cadastro input[type=number]{
+        border-radius:20px;
+        border: 1px solid #5a71bb;
+        height: 40px;
+        padding-left: 20px;
+      }
+
+      .lista-cadastro input[type=submit]{
+        cursor: pointer;
+        border-radius:20px;
+        background-color: #5a71bb;
+        padding: 10px;
+        color:white;
+        border:0;
+      }
+
+      .lista-produto-single{
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+      }
+
+      .lista-produto-single h3{
+        flex: 1;
+        padding: 0 20px;
+      }
+
+      h3.price-produto{
+        text-align: right;
+        font-size: 18px;
+      }
+
+      h3.price-produto > span{
+        background-color: #5a71bb ;
+        padding: 8px 10px;
+        border-radius: 20px;
+        color: white;
+      }
+
+      .soma-produto {
+        margin-top:10px;
+        border: 2px solid red;
+        text-align: center;
+        margin-left: 15px;
+        max-width: 250px;
+      }
+
+      button{
+        margin-left:15px;
+        margin-top:18px;
+        border-radius:20px;
+        cursor: pointer;
+        font-size:18px;
+        background-color: #5a71bb;
+        width: 120px;
+        height: 40px;
+        line-height:40px;
+        text-align: center;
+        color:white;
+        border:0;
+      }
+
+
+    </style>
+
+
+</head>
+<body>
+
+  <header>
+    <h2>Lista de SuperMercado</h2>
+  </header>
+
+  <div class="lista-cadastro">
+    <input type="text" name="nome_produto" placeholder="Nome do produto...">
+
+    <input type="number" name="price" step="0.01" placeholder="valor do produto...">
+
+    <input type="submit" name="acao" value="Cadastrar">
+
+  </div><!--lista-cadastro-->
+
+  <div class="lista-produto">
+
+
+ 
+
+  </div><!--lista-produto-->
+
+
+  <div class="soma-produto">
+    <h1>Total: R$0,00</h1>
+  </div>
+
+  <button name="limpar" >Limpar</button>
+
+
+
+
+
+  <script src="script.js"></script>
+    
+</body>
+</html>
+
+
+
